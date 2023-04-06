@@ -4,39 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".firstApp.firstApp">
-
+    tools:context=".firstApp.FirstApp"
+    android:background="@color/background_app"
+    >
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="35sp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:text="Ingresa tu nombre"
         app:layout_constraintBottom_toTopOf="@id/etName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="64dp"/>
+        android:layout_marginBottom="64dp"
+
+    />
 
 
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/etName"
         android:layout_width="300dp"
         android:layout_height="0dp"
+        android:hint="Tu nombre"
+        android:textAlignment="center"
+        android:textColorHint="@color/title_text"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/btnClick"
         android:layout_marginBottom="32dp"
         android:singleLine="true"
         android:maxLines="1"
+
         />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnClick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Boton"
+        android:text="Saludame"
         android:textColor="@color/white"
-        android:background="@color/purple_200"
+        android:background="@color/purple_500"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -10,4 +10,13 @@
     <string name="recalculate">re-calcular</string>
 
 
+
+    <!--ToDoApp Strings-->
+    <string name="todo_title">Bienvenido</string>
+    <string name="category">Categorias</string>
+    <string name="task">Tareas</string>
+
+
+
+
 </resources>

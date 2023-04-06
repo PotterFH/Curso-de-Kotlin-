@@ -4,28 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".firstApp.MenuActivity">
+    tools:context=".firstApp.MenuActivity"
+    android:background="@color/background_app"
+    >
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSaludaApp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
         android:text="SaludApp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="30dp"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnIMCApp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="IMC"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="IMC App"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSaludaApp"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="30dp"/>
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTODOApp"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="ToDo APP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIMCApp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="30dp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

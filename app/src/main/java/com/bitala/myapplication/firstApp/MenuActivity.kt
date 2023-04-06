@@ -3,10 +3,12 @@ package com.bitala.myapplication.firstApp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import androidx.appcompat.widget.AppCompatButton
 import com.bitala.myapplication.R
 import com.bitala.myapplication.imccalculator.CalculatorActivity
+import com.bitala.myapplication.todoapp.TodoActivity
 
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,6 +21,15 @@ class MenuActivity : AppCompatActivity() {
         val btnImcApp = findViewById<AppCompatButton>(R.id.btnIMCApp)
         btnImcApp.setOnClickListener{ navigateToIMCApp()}
 
+        val btnTODOApp = findViewById<AppCompatButton>(R.id.btnTODOApp)
+        btnTODOApp.setOnClickListener{ navigateToTodoApp() }
+
+
+    }
+
+    private fun navigateToTodoApp() {
+        val intent = Intent(this, TodoActivity::class.java)
+        startActivity(intent)
     }
 
     private fun navigateToIMCApp() {
