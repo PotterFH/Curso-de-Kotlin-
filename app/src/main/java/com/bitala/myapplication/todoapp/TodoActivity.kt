@@ -9,7 +9,6 @@ import com.bitala.myapplication.R
 import com.bitala.myapplication.todoapp.TaskCategory.*
 
 class TodoActivity : AppCompatActivity() {
-
     private val categories = listOf(
         Bussiness,
         Personal,
@@ -17,8 +16,8 @@ class TodoActivity : AppCompatActivity() {
     )
 
     private val tasks = mutableListOf(
-        Task("PruebaBussines", Bussiness),
-        Task("PruebaPersonal", Personal),
+        Task("PruebaBussines", TaskCategory.Bussiness),
+        Task("PruebaPersonal", TaskCategory.Personal),
         Task("PruebaOther", Other),
     )
 
@@ -46,6 +45,8 @@ class TodoActivity : AppCompatActivity() {
         rvCategory.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         rvCategory.adapter = categoryAdapter
 
-        taskAdapter = TasksAdapter()
+        taskAdapter = TasksAdapter(tasks)
+        rvTasks.layoutManager = LinearLayoutManager(this)
+        rvTasks.adapter = taskAdapter
     }
 }

@@ -16,7 +16,8 @@ class TasksAdapter (private val tasks:List<Task>) : RecyclerView.Adapter<TaskVie
     override fun getItemCount() = tasks.size
 
     override fun onBindViewHolder(holder: TaskViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        holder.render(tasks[position])
+
     }
 
 }
